@@ -4,20 +4,173 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TecnoOfertas MX</title>
-<link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+background:linear-gradient(135deg,#2563eb,#1e3a8a);
+padding:25px;
+text-align:center;
+box-shadow:0 3px 10px rgba(0,0,0,.3);
+}
+
+header h1{
+font-size:2rem;
+}
+
+.hero{
+padding:60px 20px;
+text-align:center;
+}
+
+.hero h2{
+font-size:2.2rem;
+margin-bottom:15px;
+}
+
+.hero p{
+color:#cbd5e1;
+max-width:700px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 24px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.productos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+padding:40px;
+}
+
+.card{
+background:#1e293b;
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+color:#cbd5e1;
+margin-bottom:15px;
+}
+
+.card a{
+display:inline-block;
+background:#2563eb;
+padding:10px 20px;
+border-radius:8px;
+color:white;
+text-decoration:none;
+}
+
+.adsense{
+margin:40px;
+padding:30px;
+text-align:center;
+background:#1e293b;
+border-radius:15px;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#020617;
+margin-top:30px;
+}
+</style>
+
 </head>
 <body>
+
 <header>
-<h1>TecnoOfertas MX</h1>
-<button id="themeBtn">🌙</button>
+<h1>🔥 TecnoOfertas MX</h1>
+<p>Las mejores ofertas de tecnología para México</p>
 </header>
-<input type="text" id="search" placeholder="Buscar productos...">
-<section class="products">
-<div class="card"><h3>Samsung Galaxy A25</h3><a href="#">Enlace afiliado</a></div>
-<div class="card"><h3>Audífonos Gamer</h3><a href="#">Enlace afiliado</a></div>
-<div class="card"><h3>Control Bluetooth</h3><a href="#">Enlace afiliado</a></div>
+
+<section class="hero">
+<h2>Encuentra descuentos increíbles</h2>
+<p>Smartphones, laptops, audífonos, accesorios gamer y mucho más.</p>
+<a href="#productos" class="btn">Ver ofertas</a>
 </section>
-<section class="adsense">Espacio Google AdSense 728x90</section>
-<script src="assets/js/main.js"></script>
+
+<section id="productos" class="productos">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+<div class="card-content">
+<h3>Samsung Galaxy A25</h3>
+<p>Excelente rendimiento y cámara de alta calidad.</p>
+<a href="#">Ver Oferta</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e">
+<div class="card-content">
+<h3>Audífonos Gamer</h3>
+<p>Sonido envolvente para gaming y música.</p>
+<a href="#">Ver Oferta</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853">
+<div class="card-content">
+<h3>Laptop Profesional</h3>
+<p>Ideal para estudiantes y trabajo remoto.</p>
+<a href="#">Ver Oferta</a>
+</div>
+</div>
+
+</section>
+
+<div class="adsense">
+<h2>Espacio para Google AdSense</h2>
+<p>Aquí podrás colocar anuncios cuando tu sitio crezca.</p>
+</div>
+
+<footer>
+© 2026 TecnoOfertas MX | Todos los derechos reservados
+</footer>
+
 </body>
 </html>
