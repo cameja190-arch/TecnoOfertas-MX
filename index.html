@@ -3,281 +3,229 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TecnoOfertas MX</title>
+<title>TecnoOfertas MX | Las mejores ofertas de tecnología</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+<link rel="stylesheet" href="styles.css">
 
-body{
-background:#f4f4f4;
-}
-
-header{
-background:#2563eb;
-color:white;
-padding:15px;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
-}
-
-.menu a{
-color:white;
-text-decoration:none;
-margin:10px;
-}
-
-.search{
-padding:20px;
-text-align:center;
-background:white;
-}
-
-.search input{
-width:90%;
-max-width:600px;
-padding:12px;
-border:1px solid #ccc;
-border-radius:8px;
-}
-
-.categorias{
-display:flex;
-overflow:auto;
-gap:10px;
-padding:15px;
-background:white;
-}
-
-.categoria{
-background:#2563eb;
-color:white;
-padding:10px 20px;
-border-radius:20px;
-white-space:nowrap;
-}
-
-.productos{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-padding:20px;
-}
-
-.card{
-background:white;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 2px 8px rgba(0,0,0,.1);
-}
-
-.card img{
-width:100%;
-height:200px;
-object-fit:cover;
-}
-
-.info{
-padding:15px;
-}
-
-.precio{
-font-size:24px;
-font-weight:bold;
-color:#2563eb;
-margin:10px 0;
-}
-
-.btn{
-display:block;
-text-align:center;
-background:#2563eb;
-color:white;
-padding:12px;
-text-decoration:none;
-border-radius:8px;
-}
-
-.ads{
-background:white;
-margin:20px;
-padding:30px;
-text-align:center;
-border-radius:12px;
-}
-
-footer{
-background:#111827;
-color:white;
-text-align:center;
-padding:25px;
-margin-top:20px;
-}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-<nav>
-<div class="logo">🔥 TecnoOfertas MX</div>
+<!-- Barra superior -->
 
-<div class="menu">
-<a href="#">Inicio</a>
-<a href="#">Celulares</a>
-<a href="#">Gaming</a>
-<a href="#">Laptops</a>
-<a href="#">Contacto</a>
+<div class="topbar">
+<div>🚚 Envíos rápidos a todo México</div>
+<div>✅ Ofertas verificadas</div>
+<div>🔒 Pagos seguros</div>
 </div>
-</nav>
+
+<!-- Header -->
+
+<header>
+
+<div class="logo">
+TecnoOfertas <span>MX</span>
+</div>
+
+<div class="search-box">
+<input type="text" placeholder="Buscar productos, marcas y más...">
+<button>🔍</button>
+</div>
+
+<div class="header-icons">
+<span>❤️ Favoritos</span>
+<span>🔥 Ofertas</span>
+</div>
+
 </header>
 
-<section class="search">
-<input type="text" placeholder="Buscar productos...">
+<!-- Menú -->
+
+<nav>
+
+<a href="#">Inicio</a>
+<a href="#">Celulares</a>
+<a href="#">Laptops</a>
+<a href="#">Gaming</a>
+<a href="#">Audio</a>
+<a href="#">Smartwatch</a>
+<a href="#">Hogar</a>
+<a href="#">Blog</a>
+<a href="#">Contacto</a>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>
+LAS MEJORES OFERTAS<br>
+EN TECNOLOGÍA
+</h1>
+
+<p>
+Comparamos precios para ayudarte a encontrar los mejores descuentos en México.
+</p>
+
+<a href="#productos" class="btn">
+Ver Ofertas
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800" alt="Tecnología">
+
+</div>
+
 </section>
 
-<section class="categorias">
-<div class="categoria">Celulares</div>
-<div class="categoria">Laptops</div>
-<div class="categoria">Gaming</div>
-<div class="categoria">Smartwatch</div>
-<div class="categoria">Audífonos</div>
-<div class="categoria">Hogar</div>
-</section>
+<!-- Categorías -->
 
-<section class="productos">
+<section class="categories">
 
-<div class="card">
-<img src="https://picsum.photos/400/300?1">
-<div class="info">
-<h3>Samsung Galaxy A25</h3>
-<div class="precio">$4,999 MXN</div>
-<a class="btn" href="#">Ver Oferta</a>
-</div>
+<div class="category-card">
+📱
+<h3>Celulares</h3>
 </div>
 
-<div class="card">
-<img src="https://picsum.photos/400/300?2">
-<div class="info">
-<h3>iPhone 15</h3>
-<div class="precio">$15,999 MXN</div>
-<a class="btn" href="#">Ver Oferta</a>
-</div>
+<div class="category-card">
+💻
+<h3>Laptops</h3>
 </div>
 
-<div class="card">
-<img src="https://picsum.photos/400/300?3">
-<div class="info">
-<h3>Laptop Lenovo</h3>
-<div class="precio">$8,999 MXN</div>
-<a class="btn" href="#">Ver Oferta</a>
-</div>
+<div class="category-card">
+🎮
+<h3>Gaming</h3>
 </div>
 
-<div class="card">
-<img src="https://picsum.photos/400/300?4">
-<div class="info">
-<h3>Mouse Gamer RGB</h3>
-<div class="precio">$399 MXN</div>
-<a class="btn" href="#">Ver Oferta</a>
-</div>
+<div class="category-card">
+🎧
+<h3>Audio</h3>
 </div>
 
-<div class="card">
-<img src="https://picsum.photos/400/300?5">
-<div class="info">
+<div class="category-card">
+⌚
 <h3>Smartwatch</h3>
-<div class="precio">$899 MXN</div>
-<a class="btn" href="#">Ver Oferta</a>
-</div>
 </div>
 
-<div class="card">
-<img src="https://picsum.photos/400/300?6">
-<div class="info">
-<h3>Audífonos Bluetooth</h3>
-<div class="precio">$499 MXN</div>
-<a class="btn" href="#">Ver Oferta</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?7">
-<div class="info">
-<h3>Monitor Gamer</h3>
-<div class="precio">$2,999 MXN</div>
-<a class="btn" href="#">Ver Oferta</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?8">
-<div class="info">
-<h3>Teclado Mecánico</h3>
-<div class="precio">$799 MXN</div>
-<a class="btn" href="#">Ver Oferta</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?9">
-<div class="info">
-<h3>Tablet Android</h3>
-<div class="precio">$2,499 MXN</div>
-<a class="btn" href="#">Ver Oferta</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?10">
-<div class="info">
-<h3>SSD 1TB</h3>
-<div class="precio">$1,199 MXN</div>
-<a class="btn" href="#">Ver Oferta</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?11">
-<div class="info">
-<h3>Xbox Series S</h3>
-<div class="precio">$5,999 MXN</div>
-<a class="btn" href="#">Ver Oferta</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/300?12">
-<div class="info">
-<h3>PlayStation 5</h3>
-<div class="precio">$10,999 MXN</div>
-<a class="btn" href="#">Ver Oferta</a>
-</div>
+<div class="category-card">
+🏠
+<h3>Hogar Tech</h3>
 </div>
 
 </section>
 
-<div class="ads">
-<h2>Espacio para Google AdSense</h2>
-<p>Aquí podrás monetizar tu sitio cuando tengas tráfico.</p>
+<!-- Productos -->
+
+<section id="productos">
+
+<h2 class="section-title">
+🔥 Ofertas Destacadas
+</h2>
+
+<div class="products-grid">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500">
+<h3>Samsung Galaxy A25</h3>
+<p class="price">$4,999 MXN</p>
+<a href="#">Ver oferta</a>
 </div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=500">
+<h3>Xiaomi Redmi Note</h3>
+<p class="price">$5,299 MXN</p>
+<a href="#">Ver oferta</a>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500">
+<h3>Laptop ASUS</h3>
+<p class="price">$8,999 MXN</p>
+<a href="#">Ver oferta</a>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500">
+<h3>Audífonos Sony</h3>
+<p class="price">$899 MXN</p>
+<a href="#">Ver oferta</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- Blog -->
+
+<section class="blog">
+
+<h2 class="section-title">
+📰 Últimos Artículos
+</h2>
+
+<div class="blog-grid">
+
+<div class="blog-card">
+<h3>Los 5 mejores celulares para Free Fire en 2026</h3>
+<p>Descubre los equipos con mejor rendimiento para jugar.</p>
+</div>
+
+<div class="blog-card">
+<h3>Top 10 audífonos Bluetooth baratos</h3>
+<p>Calidad y precio para escuchar música sin gastar mucho.</p>
+</div>
+
+<div class="blog-card">
+<h3>Las mejores laptops para estudiantes</h3>
+<p>Opciones recomendadas para escuela y universidad.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Newsletter -->
+
+<section class="newsletter">
+
+<h2>Recibe las mejores ofertas</h2>
+
+<p>
+Suscríbete para recibir descuentos exclusivos.
+</p>
+
+<input type="email" placeholder="Tu correo electrónico">
+
+<button>
+Suscribirme
+</button>
+
+</section>
 
 <footer>
+
+<h2>TecnoOfertas MX</h2>
+
+<p>
+Tu sitio para encontrar las mejores ofertas tecnológicas en México.
+</p>
+
+<p>
 © 2026 TecnoOfertas MX
+</p>
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
