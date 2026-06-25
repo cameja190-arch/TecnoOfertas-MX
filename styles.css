@@ -357,3 +357,30 @@ padding-right:20px;
     text-decoration:none;
     font-weight:bold;
 }
+
+.blog-card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    margin:15px 0;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    transition:0.3s;
+    display:block;
+    text-decoration:none;
+    color:#222;
+}
+
+.blog-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+}
+
+.blog-card h3{
+    color:#2563eb;
+}
+
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
